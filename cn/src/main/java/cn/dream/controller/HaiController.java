@@ -40,6 +40,7 @@ public class HaiController {
 	@RequestMapping(method = RequestMethod.PUT)
 	public ResponseEntity<Integer> putArea(@RequestBody Area area) {
 		int i = service.insertArea(area);
+		System.out.println("修改提交");
 		return new ResponseEntity<Integer>(i, HttpStatus.OK);
 	}
 }
