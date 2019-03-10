@@ -3,9 +3,10 @@
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.dream.mapper.UserRegisterMapper">
-	<select id="queryUser" resultType="cn.dream.entity.UserRegister">
+	<select id="queryUser" resultType="cn.dream.entity.UserRegister" parameterType="string">
 		SELECT userAccount,passWord
 		FROM user
+		WHERE user.userAccount=#{value}
 	</select>
 	<insert id="addUser" parameterType="cn.dream.entity.UserRegister">
 		INSERT INTO

@@ -6,7 +6,7 @@ server:
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://127.0.0.1:3306/dream
+    url: jdbc:mysql://127.0.0.1:3306/dream?useSSL=false
     username: root
     password: 123456
    #使用druid数据源
