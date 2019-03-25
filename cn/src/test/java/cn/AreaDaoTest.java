@@ -24,6 +24,6 @@ public class AreaDaoTest {
 	@Test
 	public void queryArea() {
 		List<Area> queryArea = dao.queryArea();
-		queryArea.forEach(a -> System.out.println(a));
+		queryArea.forEach(a -> System.out.println(a.toString()));
 	}
 }
