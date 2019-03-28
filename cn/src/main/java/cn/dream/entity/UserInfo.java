@@ -6,7 +6,7 @@ package cn.dream.entity;
  */
 public class UserInfo {
 	private String userAccount;
-	private String userNamex;
+	private String userName;
 	private String age;
 	private String sex;
 	public String getUserAccount() {
@@ -15,11 +15,11 @@ public class UserInfo {
 	public void setUserAccount(String userAccount) {
 		this.userAccount = userAccount;
 	}
-	public String getUserNamex() {
-		return userNamex;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUserNamex(String userNamex) {
-		this.userNamex = userNamex;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getAge() {
 		return age;
