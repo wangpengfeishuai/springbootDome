@@ -2,7 +2,11 @@ package cn;
 
 import org.junit.Test;
 
-public class TestJavaData {
+/**
+ * @author xx
+ *
+ */
+public class JavaDataTest {
 	int b=10;
 	@Test
 	public void test1() {
